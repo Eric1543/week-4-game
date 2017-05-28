@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector Game</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Imported Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Racing+Sans+One|Ruslan+Display" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid" id="wrap">
+			<div class="row">
+				<h1 class="text-center">Crystals Collector</h1>
+			</div>	
+		</div>										
+	</header>
+
+		<section class="container-fluid" id="intro">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<p>You will be given a random goal at the start of the game.
+						<br>
+						<br>
+					Each crystal below is worth a different amount, which is unknown until you click on it.
+					Collect the four crystals below to hit the goal and win,
+					but be careful not to get too greedy - if you go above the goal you lose.
+						<br>
+						<br>
+					Note: Crystal values change at the start of each game.
+						<br>
+						<br>
+					Are you ready to play Crystals Collector?
+					</p>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</section>
+
+		<section class="container-fluid" id="statusBar">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="lead">
+						<img id="wins" class="status" src="assets/images/wins.jpg" />
+					</div>
+						<div class="follow">
+							<h1 id="winsNum"></h1>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="lead">
+						<img id="goal" class="status" src="assets/images/goal.jpg" />
+					</div>
+						<div class="follow">
+							<h1 id="goalNum"></h1>
+						</div>
+				</div>
+				<div class="col-md-3">
+					<div class="lead">
+						<img id="points" class="status" src="assets/images/points.jpg" />
+					</div>
+						<div class="follow">
+							<h1 id="scoreNum"></h1>
+						</div>
+				</div>
+				<div class="col-md-3">
+					<div class="lead">
+						<img id="losses" class="status" src="assets/images/losses.jpg" />	
+					</div>
+						<div class="follow">
+							<h1 id="lossesNum"></h1>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container-fluid" id="action">
+			<div class="row">
+				<div class="col-md-4">
+					<img id="sideImage" src="assets/images/placeholder.jpg" />
+				</div>
+				<div class="col-md-4 crystals">
+					<div class="row">
+						<div class="column-md-6">
+							<img id="redCrystal" class="crystal" src="assets/images/redCrystal.png" />
+						</div>
+						<div class="column-md-6">
+							<img id="blueCrystal" class="crystal" src="assets/images/blueCrystal.png" />
+					</div>
+					<div class="row">
+						</div>
+						<div class="column-md-6">
+							<img id="greenCrystal" class="crystal" src="assets/images/greenCrystal.png" />
+						</div>
+						<div class="column-md-6">
+							<img id="purpleCrystal" class="crystal" src="assets/images/purpleCrystal.png" />
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img id="sideImage" src="assets/images/placeholder.jpg" />
+				</div>
+			</div>
+		</section>
+
+	<div class="container-fluid" id="wrap">
+		<footer class="text-center">&#169; Copyright 2017 Eric Williams
+		</footer>
+	</div>
+
+	<script type="text/JavaScript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>

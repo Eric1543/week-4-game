@@ -1,0 +1,97 @@
+body{
+	margin:0;
+}
+
+h1{
+	font-family: 'Monoton', cursive;
+	font-weight:bold;
+	font-size:90px;
+	color:#ED0;
+}
+
+p{
+	padding-top:20px;
+	padding-bottom:10px;
+	color:#FFF;
+	font-weight:bold;
+	text-align:justify;
+}
+
+footer{
+	width:100%;
+	background-color:#108;
+	padding:20px;
+	color:#ED0;
+}
+
+.crystal{
+	height:160px;
+	width:160px;
+	float:left;
+	border: 2px solid #999;
+}
+
+#sideImage{
+	height:320px;
+	width:320px;
+}
+
+.status{
+	height:225px;
+	width:225px;
+	float:left;
+	position:relative;
+}
+
+.lead{
+	position:relative;
+}
+
+.follow{
+	position:absolute;
+}
+
+#winsNum, #goalNum, #scoreNum, #lossesNum{
+	position:absolute;
+	left:100px;
+	top:50px;
+	font-family:'Arial';
+	font-size:50px;
+	color:#00F;
+}
+
+#goalNum{
+	left:80px;
+}
+
+#scoreNum{
+	left:80px;
+}
+
+#wrap{
+	width:100%;
+	background-color:#108;
+	border:10px solid #ED0;
+}
+
+#action{
+	width:100%;
+	height:100%;
+	background-color:#108;
+	border:10px solid #ED0;
+}
+
+#statusBar{
+	width:100%;
+	height:100%;
+	background-color:#108;
+	border:10px solid #ED0;
+}
+
+#intro{
+	width:100%;
+	height:100%;
+	background-color:#108;
+	border:10px solid #ED0;
+	border-image: url(..assets/images/placeholder.jpg) 20 round;
+}

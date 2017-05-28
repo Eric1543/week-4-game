@@ -1,0 +1,32 @@
+Wireframe
+Build HTML Layout
+Create Assets
+    MS Paint to cut and reorient jewels
+Write Code
+
+Requirements
+        
+    Show 
+        Number of wins and losses
+        Total score
+        Random Number
+            Between 19-120
+        4 crystals as buttons
+            Random hidden value each between 1-12
+            When clicked adds to total score
+
+    Game Over
+        Win
+            If players total score matches random number
+            Restart
+                New random number
+                Crystals with 4 new hidden values
+                User's score reset to 0
+        Lose 
+            If players total score > random number
+            Restart
+                New random number
+                Crystals with 4 new hidden values
+                User's score reset to 0
+
+
