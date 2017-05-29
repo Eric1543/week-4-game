@@ -44,6 +44,30 @@ $(document).ready(function(){
 		crystalVal();
 	}
 
+	// Play if game won
+	var winFunction = function(){
+		wins++;
+		$('#winsNum').html(wins);
+		winSound.play();
+		restart();
+	}
+
+	// Play if game lost
+	var loseFunction = function(){
+		losses++;
+		$('#lossesNum').html(losses);
+		lossSound.play();
+		restart();
+	}
+
+	// ************************************************
+	// Start game 
+	// ************************************************
+	// Set crystal values
+	// Update score as user clicks (collects) crystals
+	// Check if game won or lost with each click
+	// ************************************************
+
 	crystalVal();
 
 	$('#redCrystal').on('click', function(){
@@ -53,16 +77,10 @@ $(document).ready(function(){
 
 		// Check if game won
 		if(score === ranNum){
-			wins++;
-			$('#winsNum').html(wins);
-		    winSound.play();
-			restart();
+			winFunction();
 		}
 		else if(score>ranNum){
-			losses++;
-			$('#lossesNum').html(losses);	
-			lossSound.play();		
-			restart();
+			lossFunction();
 		}
 	});
 	$('#blueCrystal').on('click', function(){
@@ -72,16 +90,10 @@ $(document).ready(function(){
 
 		// Check if game won
 		if(score === ranNum){
-			wins++;
-			$('#winsNum').html(wins);
-			winSound.play();
-			restart();
+			winFunction();
 		}
 		else if(score>ranNum){
-			losses++;
-			$('#lossesNum').html(losses);
-			lossSound.play();
-			restart();
+			lossFunction();
 		}
 	});
 	$('#greenCrystal').on('click', function(){
@@ -91,16 +103,10 @@ $(document).ready(function(){
 
 		// Check if game won
 		if(score === ranNum){
-			wins++;
-			$('#winsNum').html(wins);
-			winSound.play();
-			restart();
+			winFunction();
 		}
 		else if(score>ranNum){
-			losses++;
-			$('#lossesNum').html(losses);
-			lossSound.play();
-			restart();
+			lossFunction();
 		}
 	});
 	$('#purpleCrystal').on('click', function(){
@@ -111,16 +117,10 @@ $(document).ready(function(){
 
 		// Check if game won
 		if(score === ranNum){
-			wins++;
-			$('#winsNum').html(wins);
-			winSound.play();
-			restart();
+			winFunction();
 		}
 		else if(score>ranNum){
-			losses++;
-			$('#lossesNum').html(losses);
-			lossSound.play();
-			restart();
+			lossFunction();
 		}
 	});
 });
