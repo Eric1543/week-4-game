@@ -53,7 +53,7 @@ $(document).ready(function(){
 	}
 
 	// Play if game lost
-	var loseFunction = function(){
+	var lossFunction = function(){
 		losses++;
 		$('#lossesNum').html(losses);
 		lossSound.play();
