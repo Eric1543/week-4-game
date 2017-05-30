@@ -26,16 +26,15 @@ footer{
 }
 
 .crystal{
-	height:160px;
-	width:160px;
+	max-height:auto;
+	max-width:150px;
 	float:left;
 	border: 2px inset #999;
 }
 
 #sideImage{
-	max-height:320px;
 	height:auto;
-	max-width:320px;
+	max-width:293px;
 	width:100%;
 }
 
@@ -62,15 +61,16 @@ footer{
 }
 
 #goalNum{
-	left:80px;
+	left:70px;
 }
 
 #scoreNum{
-	left:80px;
+	left:70px;
 }
 
 #wrap{
-	width:100%;
+	max-width:100%;
+	height:auto;
 	background-color:#108;
 	border:10px inset #ED0;
 }
@@ -95,4 +95,34 @@ footer{
 	background-color:#108;
 	border:10px inset #ED0;
 	border-image: url(..assets/images/placeholder.jpg) 20 round;
+}
+
+@media only screen and (max-width: 980px) {
+  	#sideImage {
+    width:100px;
+  	}
+}
+
+@media only screen and (max-width: 768px) {
+	#sideImage {
+    width:145px;
+    float:right;
+  	}
+  	#winsCol {
+  	float:right;
+  	}
+  	#pointsCol {
+	float:left;
+  	}
+  	#lossesCol{
+  	float:right;
+  	}
+
+}
+
+
+@media only screen and (max-width: 640px) {
+	#sideImage {
+    width:0px;
+  	}
 }
