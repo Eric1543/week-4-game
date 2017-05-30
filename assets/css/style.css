@@ -32,7 +32,11 @@ footer{
 	border: 2px inset #999;
 }
 
-#sideImage{
+#title{
+	width:100%;
+}
+
+#sideImage1, #sideImage2{
 	height:auto;
 	max-width:293px;
 	width:100%;
@@ -99,30 +103,42 @@ footer{
 
 @media only screen and (max-width: 980px) {
   	#sideImage {
-    width:100px;
+   
   	}
 }
 
 @media only screen and (max-width: 768px) {
-	#sideImage {
-    width:145px;
+	#sideImage1 {
+    width:0px;
     float:right;
   	}
-  	#winsCol {
-  	float:right;
+  	#sideImage2{
+  	width:0px;
   	}
-  	#pointsCol {
-	float:left;
+  	#crystal{
+  	float:left;
   	}
-  	#lossesCol{
-  	float:right;
+  	#winsCol{
+		float:left;
   	}
-
+  	#goalNum{
+  		left:300px;
+  	}
+  	#goalCol{
+  		float:right;
+  		margin-right:0px;
+  	}
+  	#pointsCol{
+  		float:left;
+  	}
+	#lossesCol{
+		float:right;
+	}
 }
 
 
 @media only screen and (max-width: 640px) {
-	#sideImage {
+	#sideImage1 {
     width:0px;
   	}
 }
