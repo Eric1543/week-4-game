@@ -139,7 +139,10 @@ footer{
 
 
 @media only screen and (max-width: 640px) {
-	body{
+	#wrap{
+	width:100%;
+	}
+	#intro{
 	width:100%;
 	}
 	#sideImage1 {
